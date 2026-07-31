@@ -1,0 +1,64 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --ink: #0b0f16;
+  --paper: #ffffff;
+  --brand: #7f1d1d;
+  --brand-light: #a83232;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Outfit', system-ui, sans-serif;
+  background-color: var(--ink);
+  color: var(--paper);
+}
+.font-display {
+  font-family: 'Archivo', 'Outfit', system-ui, sans-serif;
+  font-stretch: expanded;
+}
+.dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.14) 1.2px, transparent 1.2px);
+  background-size: 44px 44px;
+}
+@keyframes nx-ping {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+/* Leaflet chrome restyled to match the site */
+.leaflet-container {
+  font-family: 'Outfit', system-ui, sans-serif;
+}
+.leaflet-tooltip {
+  border: none;
+  border-radius: 12px;
+  background: #7f1d1d;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 6px 10px;
+  box-shadow: 0 10px 30px rgba(11, 15, 22, 0.45);
+}
+.leaflet-tooltip-top::before {
+  border-top-color: #7f1d1d;
+}
+.leaflet-control-attribution {
+  background: rgba(11, 15, 22, 0.8);
+  border-radius: 999px 0 0 0;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
